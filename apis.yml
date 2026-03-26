@@ -1,0 +1,34 @@
+aid: speedscale
+name: Speedscale
+description: >-
+  Speedscale is an API traffic replay and performance testing platform that
+  captures production traffic for load testing and validation.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - API Analysis
+  - API Testing
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/speedscale/refs/heads/main/apis.yml
+created: '2026-03-26'
+modified: '2026-03-26'
+specificationVersion: '0.19'
+apis:
+  - aid: speedscale:speedscale
+    name: Speedscale
+    description: >-
+      Speedscale is an API traffic replay and performance testing platform that
+      captures production traffic for load testing and validation.
+    humanURL: https://speedscale.com
+    tags:
+      - API Analysis
+      - API Testing
+    properties:
+      - type: Documentation
+        url: https://docs.speedscale.com
+common:
+  - type: Website
+    url: https://speedscale.com
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
