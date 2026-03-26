@@ -2,33 +2,69 @@ aid: speedscale
 name: Speedscale
 description: >-
   Speedscale is an API traffic replay and performance testing platform that
-  captures production traffic for load testing and validation.
+  captures production API traffic and replays it in test environments for load
+  testing, regression testing, and validation. It enables teams to simulate
+  realistic traffic patterns without building test scripts from scratch.
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - API Analysis
   - API Testing
+  - Traffic Replay
+  - Load Testing
+  - Performance Testing
+  - API Mocking
+  - Kubernetes
+  - Regression Testing
 url: >-
   https://raw.githubusercontent.com/api-evangelist/speedscale/refs/heads/main/apis.yml
 created: '2026-03-26'
 modified: '2026-03-26'
 specificationVersion: '0.19'
 apis:
-  - aid: speedscale:speedscale
-    name: Speedscale
+  - aid: speedscale:speedscale-platform
+    name: Speedscale Platform
     description: >-
-      Speedscale is an API traffic replay and performance testing platform that
-      captures production traffic for load testing and validation.
+      Speedscale captures production API traffic and replays it in lower
+      environments for load testing, regression testing, and chaos testing. It
+      provides traffic capture, replay, mocking of backend dependencies, and
+      performance assertions for Kubernetes-based applications.
     humanURL: https://speedscale.com
     tags:
-      - API Analysis
       - API Testing
+      - Traffic Replay
+      - Load Testing
+      - Performance Testing
+      - Kubernetes
     properties:
       - type: Documentation
         url: https://docs.speedscale.com
+      - type: GettingStarted
+        url: https://docs.speedscale.com/guides/getting-started/
+      - type: CLI
+        url: https://docs.speedscale.com/reference/cli/
 common:
   - type: Website
     url: https://speedscale.com
+  - type: Documentation
+    url: https://docs.speedscale.com
+  - type: Blog
+    url: https://speedscale.com/blog
+  - type: Pricing
+    url: https://speedscale.com/pricing
+  - type: Login
+    url: https://app.speedscale.com
+  - type: Signup
+    url: https://speedscale.com/free-trial
+  - type: Support
+    url: https://docs.speedscale.com/support/
+  - type: GitHub
+    url: https://github.com/speedscale
+  - type: Twitter
+    url: https://twitter.com/speedscaleinc
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/speedscale
+  - type: YouTube
+    url: https://www.youtube.com/@speedscale
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
