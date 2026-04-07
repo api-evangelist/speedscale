@@ -8,13 +8,13 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
+  - API Mocking
   - API Testing
-  - Traffic Replay
+  - Kubernetes
   - Load Testing
   - Performance Testing
-  - API Mocking
-  - Kubernetes
   - Regression Testing
+  - Traffic Replay
 url: >-
   https://raw.githubusercontent.com/api-evangelist/speedscale/refs/heads/main/apis.yml
 created: '2026-03-26'
@@ -31,10 +31,10 @@ apis:
     humanURL: https://speedscale.com
     tags:
       - API Testing
-      - Traffic Replay
+      - Kubernetes
       - Load Testing
       - Performance Testing
-      - Kubernetes
+      - Traffic Replay
     properties:
       - type: Documentation
         url: https://docs.speedscale.com
