@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "speedscale": "https://speedscale.com/vocab/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "TrafficSnapshot": {
+      "@id": "speedscale:TrafficSnapshot",
+      "@type": "@id",
+      "schema:description": "A saved collection of captured API traffic for replay."
+    },
+    "TrafficReplay": {
+      "@id": "speedscale:TrafficReplay",
+      "@type": "@id",
+      "schema:description": "A replay run of a captured traffic snapshot against a target service."
+    },
+    "TestReport": {
+      "@id": "speedscale:TestReport",
+      "@type": "@id",
+      "schema:description": "Results of a Speedscale traffic replay test run."
+    },
+    "ServiceMock": {
+      "@id": "speedscale:ServiceMock",
+      "@type": "@id",
+      "schema:description": "A simulated backend service created from captured traffic responses."
+    },
+
+    "requestCount": {
+      "@id": "speedscale:requestCount",
+      "@type": "xsd:integer"
+    },
+    "durationMs": {
+      "@id": "speedscale:durationMs",
+      "@type": "xsd:integer"
+    },
+    "piiSanitized": {
+      "@id": "speedscale:piiSanitized",
+      "@type": "xsd:boolean"
+    },
+    "environment": {
+      "@id": "speedscale:environment",
+      "@type": "@vocab"
+    },
+    "capturedAt": {
+      "@id": "speedscale:capturedAt",
+      "@type": "xsd:dateTime"
+    },
+    "errorRate": {
+      "@id": "speedscale:errorRate",
+      "@type": "xsd:decimal"
+    },
+    "latencyP99Ms": {
+      "@id": "speedscale:latencyP99Ms",
+      "@type": "xsd:integer"
+    },
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "version": "schema:version",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+    "SoftwareApplication": "schema:SoftwareApplication"
+  }
+}

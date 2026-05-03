@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://speedscale.com/schemas/traffic-snapshot",
+  "title": "Speedscale Traffic Snapshot",
+  "description": "Represents a captured traffic snapshot in the Speedscale platform, containing recorded API requests and responses for replay.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the traffic snapshot."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name for the snapshot."
+    },
+    "description": {
+      "type": "string",
+      "description": "Optional description of what the snapshot captures."
+    },
+    "capturedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the snapshot was captured."
+    },
+    "source": {
+      "type": "object",
+      "description": "Metadata about the traffic capture source.",
+      "properties": {
+        "service": {
+          "type": "string",
+          "description": "Name of the service from which traffic was captured."
+        },
+        "environment": {
+          "type": "string",
+          "enum": ["production", "staging", "development", "local"],
+          "description": "Environment where traffic was captured."
+        },
+        "namespace": {
+          "type": "string",
+          "description": "Kubernetes namespace (if applicable)."
+        }
+      }
+    },
+    "requestCount": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of API requests in the snapshot."
+    },
+    "durationMs": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Duration of the captured traffic window in milliseconds."
+    },
+    "piiSanitized": {
+      "type": "boolean",
+      "description": "Whether PII fields have been automatically masked."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Labels for organizing and filtering snapshots."
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the snapshot was saved to Speedscale."
+    }
+  },
+  "required": ["id", "name", "capturedAt"],
+  "additionalProperties": false
+}

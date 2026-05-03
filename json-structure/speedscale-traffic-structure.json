@@ -1,0 +1,90 @@
+{
+  "title": "Speedscale Traffic Snapshot Structure",
+  "description": "Hierarchical structure of a Speedscale traffic snapshot resource.",
+  "type": "object",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "description": "Unique snapshot identifier."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Human-readable snapshot name."
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": false,
+      "description": "Optional description of the snapshot contents."
+    },
+    {
+      "name": "capturedAt",
+      "type": "string",
+      "format": "date-time",
+      "required": true,
+      "description": "When the traffic was captured."
+    },
+    {
+      "name": "source",
+      "type": "object",
+      "required": false,
+      "description": "Metadata about the capture source.",
+      "fields": [
+        {
+          "name": "service",
+          "type": "string",
+          "required": false,
+          "description": "Source service name."
+        },
+        {
+          "name": "environment",
+          "type": "enum",
+          "values": ["production", "staging", "development", "local"],
+          "required": false,
+          "description": "Capture environment."
+        },
+        {
+          "name": "namespace",
+          "type": "string",
+          "required": false,
+          "description": "Kubernetes namespace."
+        }
+      ]
+    },
+    {
+      "name": "requestCount",
+      "type": "integer",
+      "required": false,
+      "description": "Number of API requests in snapshot."
+    },
+    {
+      "name": "durationMs",
+      "type": "integer",
+      "required": false,
+      "description": "Capture window duration in milliseconds."
+    },
+    {
+      "name": "piiSanitized",
+      "type": "boolean",
+      "required": false,
+      "description": "Whether PII has been masked."
+    },
+    {
+      "name": "tags",
+      "type": "string[]",
+      "required": false,
+      "description": "Labels for organizing snapshots."
+    },
+    {
+      "name": "createdAt",
+      "type": "string",
+      "format": "date-time",
+      "required": false,
+      "description": "Snapshot creation timestamp."
+    }
+  ]
+}

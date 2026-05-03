@@ -1,0 +1,16 @@
+{
+  "id": "snap-prod-checkout-20260501",
+  "name": "Checkout Service Production Traffic - May 2026",
+  "description": "30-minute production traffic capture from the checkout service during peak hours.",
+  "capturedAt": "2026-05-01T14:00:00Z",
+  "source": {
+    "service": "checkout-api",
+    "environment": "production",
+    "namespace": "ecommerce-prod"
+  },
+  "requestCount": 14850,
+  "durationMs": 1800000,
+  "piiSanitized": true,
+  "tags": ["checkout", "production", "peak-traffic", "may-2026"],
+  "createdAt": "2026-05-01T14:31:05Z"
+}

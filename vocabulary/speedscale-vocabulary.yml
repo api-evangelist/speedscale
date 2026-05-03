@@ -1,0 +1,147 @@
+vocabulary:
+  name: Speedscale Vocabulary
+  description: >-
+    Domain vocabulary for Speedscale, an API traffic capture and replay platform
+    for load testing, regression testing, and validating AI-generated code using
+    real production traffic.
+  created: '2026-05-02'
+  modified: '2026-05-02'
+
+  terms:
+    - term: Traffic Capture
+      definition: >-
+        The process of recording real API requests and responses from a
+        production or staging environment, including full payload bodies,
+        headers, authentication tokens, and timing metadata.
+      related:
+        - Snapshot
+        - Sidecar
+        - Proxy
+
+    - term: Traffic Replay
+      definition: >-
+        The process of replaying previously captured API traffic against a
+        target service in a test environment to reproduce real-world load
+        and behavior deterministically.
+      related:
+        - Traffic Capture
+        - Snapshot
+        - Load Testing
+
+    - term: Snapshot
+      definition: >-
+        A saved collection of captured API traffic (requests and responses)
+        used as the input for a traffic replay. Snapshots preserve exact
+        production scenarios for reproducible testing.
+      related:
+        - Traffic Capture
+        - Traffic Replay
+
+    - term: Service Virtualization
+      definition: >-
+        The simulation of backend API dependencies (databases, third-party
+        services, microservices) using captured traffic responses, allowing
+        isolated testing without access to real downstream systems.
+      related:
+        - Mocking
+        - Traffic Capture
+
+    - term: Mocking
+      definition: >-
+        A form of service virtualization where Speedscale automatically creates
+        response simulations from captured traffic, removing the need for real
+        backend services during testing.
+      related:
+        - Service Virtualization
+        - Proxymock
+
+    - term: Proxymock
+      definition: >-
+        Speedscale's local-first traffic replay and mocking tool, available as
+        a free desktop CLI. Proxymock captures traffic and mocks upstream
+        dependencies without requiring cloud connectivity.
+      related:
+        - Mocking
+        - Traffic Capture
+        - speedctl
+
+    - term: speedctl
+      definition: >-
+        The Speedscale command-line interface for data collection, traffic
+        replay, schedule management, and infrastructure control. Available
+        for macOS, Linux, and Windows.
+      related:
+        - CLI
+        - Proxymock
+
+    - term: Sidecar
+      definition: >-
+        A proxy container deployed alongside an application in Kubernetes to
+        intercept and capture all inbound and outbound API traffic without
+        modifying the application code.
+      related:
+        - Traffic Capture
+        - Kubernetes
+
+    - term: Test Report
+      definition: >-
+        The output of a Speedscale traffic replay run, showing which API calls
+        succeeded, failed, or deviated from expected behavior, including
+        latency and error rate metrics.
+      related:
+        - Traffic Replay
+        - Performance Assertions
+
+    - term: Performance Assertions
+      definition: >-
+        Configurable thresholds applied to replay results, failing a test if
+        error rates, latency, or throughput exceed defined limits.
+      related:
+        - Test Report
+        - Load Testing
+
+    - term: PII-Safe Replay
+      definition: >-
+        A Speedscale feature that automatically detects and masks personally
+        identifiable information (PII) in captured traffic before replay,
+        ensuring compliance when using production data.
+      related:
+        - Traffic Capture
+        - Traffic Replay
+
+    - term: Load Testing
+      definition: >-
+        A type of performance test where Speedscale replays production traffic
+        at scale to validate application behavior under realistic load conditions.
+      related:
+        - Traffic Replay
+        - Performance Assertions
+
+    - term: MCP Integration
+      definition: >-
+        Speedscale's native support for the Model Context Protocol, enabling
+        AI coding agents (Claude Code, Cursor, GitHub Copilot) to access
+        production traffic context when generating and validating code.
+      related:
+        - AI Code Validation
+        - Proxymock
+
+    - term: BYOC
+      definition: >-
+        Bring-Your-Own-Cloud; an Enterprise deployment option for Speedscale
+        where the platform is deployed into the customer's own cloud infrastructure
+        for data residency and compliance requirements.
+      related:
+        - Enterprise
+
+  tags:
+    - API Mocking
+    - API Testing
+    - Kubernetes
+    - Load Testing
+    - Performance Testing
+    - Regression Testing
+    - Service Virtualization
+    - Traffic Replay
+    - CI/CD Integration
+    - AI Code Validation
