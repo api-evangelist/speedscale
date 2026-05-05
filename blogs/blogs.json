@@ -1,0 +1,13 @@
+{
+  "repo": "speedscale",
+  "feeds": [
+    {
+      "source": "https://speedscale.com/blog",
+      "feed_url": "https://speedscale.com/rss.xml",
+      "saved": 10,
+      "title": "Speedscale Blog"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:36:57Z"
+}
