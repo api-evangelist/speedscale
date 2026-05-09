@@ -4,10 +4,10 @@
     {
       "source": "https://speedscale.com/blog",
       "feed_url": "https://speedscale.com/rss.xml",
-      "saved": 10,
-      "title": "Speedscale Blog"
+      "title": "Speedscale Blog",
+      "saved": 1
     }
   ],
-  "post_count": 10,
-  "fetched": "2026-05-03T23:36:57Z"
+  "post_count": 11,
+  "fetched": "2026-05-09T20:17:51Z"
 }
