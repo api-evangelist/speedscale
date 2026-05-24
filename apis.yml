@@ -108,6 +108,8 @@ common:
   - type: Samples
     url: https://github.com/speedscale/proxymock-examples
     x-name: Proxymock Examples
+  - type: LLMsTxt
+    url: https://docs.speedscale.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
