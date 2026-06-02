@@ -2,12 +2,27 @@
   "repo": "speedscale",
   "feeds": [
     {
-      "source": "https://speedscale.com/blog",
+      "source": "https://speedscale.com/rss.xml",
       "feed_url": "https://speedscale.com/rss.xml",
-      "title": "Speedscale Blog",
-      "saved": 41
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://speedscale.com/pricing/",
+      "feed_url": "https://speedscale.com/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://docs.speedscale.com",
+      "feed_url": "https://docs.speedscale.com",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "post_count": 52,
-  "fetched": "2026-05-17T20:20:35Z"
+  "post_count": 60,
+  "fetched": "2026-06-01T23:35:02Z"
 }
