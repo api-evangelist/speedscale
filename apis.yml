@@ -85,7 +85,7 @@ common:
     url: https://speedscale.com/pricing/
   - type: Login
     url: https://app.speedscale.com
-  - type: SignUp
+  - type: Signup
     url: https://app.speedscale.com/signup
   - type: Support
     url: https://docs.speedscale.com/support/
@@ -108,7 +108,7 @@ common:
   - type: Samples
     url: https://github.com/speedscale/proxymock-examples
     x-name: Proxymock Examples
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.speedscale.com/llms.txt
 maintainers:
   - FN: Kin Lane
