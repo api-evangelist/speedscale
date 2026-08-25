@@ -5,7 +5,7 @@
       "source": "https://speedscale.com/rss.xml",
       "feed_url": "https://speedscale.com/rss.xml",
       "title": "",
-      "saved": 7,
+      "saved": 0,
       "method": "feed"
     },
     {
@@ -13,8 +13,7 @@
       "feed_url": "https://docs.speedscale.com",
       "title": "",
       "saved": 0,
-      "method": "none",
-      "error": "parse_failed"
+      "method": "none"
     },
     {
       "source": "https://speedscale.com/pricing/",
@@ -24,6 +23,6 @@
       "method": "discovered"
     }
   ],
-  "post_count": 88,
-  "fetched": "2026-08-15T12:11:08Z"
+  "post_count": 91,
+  "fetched": "2026-08-22T20:20:02Z"
 }
