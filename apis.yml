@@ -130,7 +130,7 @@ common:
   - type: HelmChart
     url: https://github.com/speedscale/operator-helm
     x-name: Speedscale Operator Helm Chart
-  - type: Samples
+  - type: Examples
     url: https://github.com/speedscale/proxymock-examples
     x-name: Proxymock Examples
   - type: LlmsText
